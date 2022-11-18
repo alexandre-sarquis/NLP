@@ -1,0 +1,58 @@
+;
+; "Command Prompt Here" PowerToy
+;
+; Copyright 1996 Microsoft Corporation
+;
+[version]
+signature="$CHICAGO$"
+
+[MxpostHereInstall]
+CopyFiles = MxpostHere.Files.Inf
+AddReg    = MxpostHere.Reg
+
+[DefaultInstall]
+CopyFiles = MxpostHere.Files.Inf
+AddReg    = MxpostHere.Reg
+
+[DefaultInstall.ntx86]
+CopyFiles = MxpostHere.Files.Inf
+AddReg    = MxpostHere.Reg.NT
+
+[DefaultUnInstall]
+DelFiles  = MxpostHere.Files.Inf
+DelReg    = MxpostHere.Reg
+
+[DefaultUnInstall.ntx86]
+DelFiles  = MxpostHere.Files.Inf
+DelReg    = MxpostHere.Reg.NT
+
+[SourceDisksNames]
+55="Mxpost Here","",1
+
+[SourceDisksFiles]
+MXPOSTHERE.INF=55
+
+[DestinationDirs]
+MxpostHere.Files.Inf = 17
+
+[MxpostHere.Files.Inf]
+MxpostHere.INF
+
+[MxpostHere.Reg]
+HKLM,%UDHERE%
+HKLM,%UDHERE%,DisplayName,,"%MxpostHereName%"
+HKLM,%UDHERE%,UninstallString,,"%10%\rundll.exe setupx.dll,InstallHinfSection DefaultUninstall 132 %17%\MxpostHere.inf"
+HKCR,txtfile\Shell\MxpostHere,,,"%MxpostHereAccel%"
+HKCR,txtfile\Shell\MxpostHere\command,,,"""%MXPOSTHOME%""\mxposthere.bat ""%1"""
+
+[MxpostHere.Reg.NT]
+HKLM,%UDHERE%
+HKLM,%UDHERE%,DisplayName,,"%MxpostHereName%"
+HKLM,%UDHERE%,UninstallString,,"rundll32.exe syssetup.dll,SetupInfObjectInstallAction DefaultUninstall 132 %17%\MxpostHere.inf"
+HKCR,txtfile\Shell\MxpostHere,,,"%MxpostHereAccel%"
+HKCR,txtfile\Shell\MxpostHere\command,,,"""%MXPOSTHOME%""\mxposthere.bat ""%1"""
+
+[Strings]
+MxpostHereName="Mxpost Here PowerToy"
+MxpostHereAccel="Etiquetar"
+UDHERE="Software\Microsoft\Windows\CurrentVersion\Uninstall\MxpostHere"

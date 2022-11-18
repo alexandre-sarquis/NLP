@@ -1,0 +1,26 @@
+Contrações
+---------------
+
+PREP+ART
+PREP+PD *
+PREP+PPR *
+PREP+N
+PREP+PPOT *
+ 
+Tagset Reduzido
+-------------------------
+I
+LOCU - locução
+PREP
+N
+NP - nome próprio
+VERB
+ADJ
+AUX - verbo auxiliar
+ADV
+PRON
+CONJ
+NUME
+ART
+RES - resíduo
+PDEN - palavra denotativa

@@ -1,0 +1,14 @@
+mxpost [diretório do modelo] < ARQIN > ARQOUT
+
+
+Formato de ARQIN:
+
+Cada token separado por espaço (não se esqueça da pontuação, que não deve estar colada nas palavras). Para fazer isso automaticamente, pode-se usar o programa "Pretagger.exe" (que está no mesmo diretório deste documento), indicando o arquivo que será etiquetado.
+
+Formato de ARQOUT:
+
+TOKEN1_TAG1 TOKEN2_TAG2...
+
+
+Para chamar linha de comando do DELPHI: WinExec.
+

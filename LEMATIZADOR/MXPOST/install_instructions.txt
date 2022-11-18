@@ -1,0 +1,27 @@
+Instruções para instalar o mxpost
+
+- instalar java na máquina. Para isso, faça download do site:
+
+	http://java.sun.com/getjava/download.html
+
+- crie um diretório de instalação, cujo caminho chamaremos de <INSTALL_DIR>
+
+- copie todo o conteúdo desta pasta para <INSTALL_DIR>
+
+- Windows não XP (ainda com autoexec.bat): dicione a seguinte linha ao arquivo autoexec.bat
+
+	set MXPOSTHOME=<INSTALL_DIR>
+
+	onde <INSTALL_DIR> deve ser substituído pelo nome próprio.
+
+- Windows XP: adicione a variável em Propriedades de "Meu Computador", guia Avançado.
+
+- reinicie o computador
+
+--------------------------- Opcional: se você quiser um comando de etiquetar em menus pop-up.
+
+- volte a <INSTALL_DIR> e clique o botão esquerdo sobre "MxpostHere.INF" e selecione "Instalar" (peça "Ignorar arquivo" caso dê algum problema);
+
+- teste o tagger pela primeira vez. Se der problema: basta agora procurar <INSTALL_DIR> na caixa de diálogo que aparecer.
+
+- desfrute agora de seu tagger recém-instalado, que poderá ser usado apertando o botão esquerdo do mouse sobre arquivos .txt.
