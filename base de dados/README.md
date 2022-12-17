@@ -17,13 +17,13 @@ Quote - "
 
 escape - '
 
-'''
+```
 "C:\\Program Files\\PostgreSQL\\12\\bin\\psql.exe" --command " "\\copy public.decisoes_nlp_tc (id_decisao, vc_processo, it_documento, vc_arquivo, it_arquivo, vc_caminho, dt_autuacao, vc_status, it_exercicio, cd_ambito, vc_classe, vc_resultado, vc_relator, vl_valor, cd_doc_contratante, cd_doc_contratada, vc_contratante, vc_contratada, tx_plain_text, vt_norm_vet, js_tf, tsv_plain_text) TO 'D:/Users/Alexandre/Documents/exp_decisoes_nlp_tc.csv' DELIMITER ';' CSV ENCODING 'UTF8' QUOTE '\"' ESCAPE '''';""
-'''
+```
 
 
 ## DDL
-'''
+```
 CREATE TABLE public.tabela_nilc_nlp_tc
 (
     id_index integer NOT NULL DEFAULT nextval('tabela_nilc_nlp_tc_id_index_seq'::regclass),
@@ -126,4 +126,4 @@ BEGIN
     RETURN NORM;
 END;
 $BODY$;
-'''
+```
