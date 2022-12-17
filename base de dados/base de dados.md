@@ -3,7 +3,7 @@ A base de dados usada no curso tinha duas tabelas. Abaixo as suas definições. 
 
 O dump da tabela 'TABELA_NILC_NLP_TC' é muito grande, mas basicamente são os keyedvectors do [NILC](http://nilc.icmc.usp.br/nilc/index.php/repositorio-de-word-embeddings-do-nilc) - [Word2Vec CBOW 600 dimensões](http://143.107.183.175:22980/download.php?file=embeddings/word2vec/cbow_s600.zip)
 ## DECISOES_NLP_TC
-Esta tabela está anexa - exp_decisoes_nlp_tc.csv
+Esta tabela está anexa - [exp_decisoes_nlp_tc.csv](https://drive.google.com/file/d/1DoW_9PmWJN04DC1bIc5ctcKjHl0CzQTk/view?usp=sharing)
 
 encoding = utf8
 
